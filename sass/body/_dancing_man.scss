@@ -30,24 +30,47 @@
 }
 .right_leg{
   width: 10px;
-  height:60px;
+  height:30px;
   border-radius:10%;
   background-color:whitesmoke;
   position:absolute;
-  left: 195px;
-  top: 277px;
+  left: 183px;
+  top: 279px;
+  transform: rotate(-23px);
 
 }
 
 .left_leg{
   width: 10px;
-  height:60px;
+  height:30px;
   border-radius:10%;
   background-color:whitesmoke;
   position:absolute;
-  left: 175px;
+  left: 201px;
   top: 277px;
+  transform: rotate(-23deg);
 
+}
+.right_thigh{
+  width: 10px;
+  height:40px;
+  border-radius:10%;
+  background-color:whitesmoke;
+  position:absolute;
+  left: -1px;
+  top: 24px;
+  transform: rotate(4deg);
+}
+
+.left_thigh{
+  width: 10px;
+  height:40px;
+  border-radius:10%;
+  background-color:whitesmoke;
+  position:absolute;
+  left: -6px;
+  top: 24px;
+  transform: rotate(21deg);
 }
 
 
@@ -109,14 +132,14 @@
 .dance_1 {}
 
 .dance_2 {
-  animation: moveHands infinite alternate-reverse;
+  animation: moveHands infinite alternate-reverse ease-in-out;
 
 }
 
 @keyframes moveHands {
   50% {
     transform-origin: -10px 10px;
-    transform: rotate(-9deg);
+    transform: rotate(-6deg);
 
 
   }

@@ -9,13 +9,13 @@ export class DancingMan extends React.Component{
     render(){
         return(
             <section className={'dancer'}>
-                <div className={'torso'}></div>
+                <div className={'torso '+ this.props.class} style={ this.props.style}></div>
                 <div className={'head ' + this.props.class} style={ this.props.style} ></div>
-                <div className={'right_leg'}>
+                <div className={'right_leg ' + this.props.class} style={ this.props.style}>
                     <div className={'right_thigh'}></div>
                     <div className={'right_calf'}></div>
                 </div>
-                <div className={'left_leg'}>
+                <div className={'left_leg ' + this.props.class} style={ this.props.style}>
                     <div className={'left_thigh'}></div>
                     <div className={'left_calf'}></div>
                 </div>
