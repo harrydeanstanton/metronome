@@ -6,9 +6,10 @@
   height: 250px;
   background-color:$graphit-main ;
   border: 5px solid whitesmoke;
-  align-content: center;
-  flex-direction: column-reverse;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column ;
 
 }
 
@@ -18,15 +19,16 @@
   font-weight: 1000;
   color: whitesmoke;
   font-family: 'Gugi', cursive;
-  position: relative;
-  top: 56px;
+
 
 
 }
 
-
 .title_area{
   height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 .logo_head{

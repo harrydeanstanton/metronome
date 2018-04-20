@@ -32,3 +32,29 @@
   }
 }
 
+.set_bpm {
+  background-color: $graphit-darker;
+  color: whitesmoke;
+  font-family: 'Gugi', cursive;
+  position: relative;
+  left: 462px;
+  top: -114px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10%;
+  border: 2px solid $graphit-dark;
+
+
+
+}
+
+.set_the_beat {
+  color: whitesmoke;
+  font-size: 2em;
+  font-family: 'Gugi', cursive;
+  position: relative;
+  display: inline-block;
+  left: 435px;
+  top: -107px;
+}
+

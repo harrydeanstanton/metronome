@@ -106,11 +106,11 @@ export class Metronome extends React.Component {
             });
         };
 
-        /*handleChange= (event) => {
+        handleChange= (event) => {
             this.setState({
                 bpm: event.target.value
             })
-        };*/
+        };
 
     render() {
 
@@ -122,12 +122,14 @@ export class Metronome extends React.Component {
                             <div className={'tempo_meter'}>{this.state.tempo}</div>
                             <input className={'tempo_bar'} type="range" min='0' max="300" onChange= {this.SetTheTempo} />
                             <input className={'start_button'} type="button" onClick={this.ClickToChange} value={this.state.on===true ? 'Stop' : 'Start'}></input>
+                            <span className={'set_the_beat'}>Set the Beat</span>
+                            <input className={'set_bpm'} type="number" min='1' max='16' onChange={this.handleChange} value={this.state.bpm} />
                             <audio src="./../../../assets/sounds/accent.wav" ref={el => this.audio1 = el}/>
                             <audio src="./../../../assets/sounds/beat.wav" ref={el => this.audio2 = el}/>
                         </div>
                 </section>
 
-                <div className={'footer'}></div>
+                <div className={'footer'}><span className={"jan2018"}>2018 Jan</span></div>
 
             </div>
         )
