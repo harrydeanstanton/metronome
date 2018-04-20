@@ -1,0 +1,49 @@
+@import "./globals/_palette";
+@import '../assets/fonts/fonts.scss';
+
+.header{
+  width: 1200px;
+  height: 250px;
+  background-color:$graphit-main ;
+  border: 5px solid whitesmoke;
+  align-content: center;
+  flex-direction: column-reverse;
+  text-align: center;
+
+}
+
+.dancing_man_title{
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: 1000;
+  color: whitesmoke;
+  font-family: 'Gugi', cursive;
+  position: relative;
+  top: 56px;
+
+
+}
+
+
+.title_area{
+  height: 250px;
+
+}
+.logo_head{
+  font-size: 3.5em;
+  width: 100px;
+  height: 40px;
+  margin-bottom: 50px;
+
+}
+.logo_torso{
+  font-size: 2em;
+}
+.logo_metronome{
+  width: 600px;
+
+}
+
+.logo_dancing_man{
+  width: 600px;
+}

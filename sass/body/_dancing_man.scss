@@ -1,0 +1,150 @@
+@import "./globals/_palette";
+
+
+
+.dancer{
+  width: 100px;
+  height: 350px;
+  position:relative;
+
+}
+.torso{
+  width: 30px;
+  height: 100px;
+  border-radius: 10%;
+  background-color: whitesmoke;
+  left: 175px;
+  top: 184px;
+  position: absolute;
+
+}
+.head{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  background-color:whitesmoke;
+  position: absolute;
+  left: 170px;
+  top: 142px;
+
+}
+.right_leg{
+  width: 10px;
+  height:60px;
+  border-radius:10%;
+  background-color:whitesmoke;
+  position:absolute;
+  left: 195px;
+  top: 277px;
+
+}
+
+.left_leg{
+  width: 10px;
+  height:60px;
+  border-radius:10%;
+  background-color:whitesmoke;
+  position:absolute;
+  left: 175px;
+  top: 277px;
+
+}
+
+
+
+
+.right_upper_arm{
+  width: 10px;
+  height:30px;
+  border-radius:10%;
+  background-color:whitesmoke;
+  position:absolute;
+  left: 164px;
+  top: 183px;
+  transform: rotate(45deg);
+
+}
+.right_forearm{
+  width: 10px;
+  height:30px;
+  border-radius:30%;
+  background-color:whitesmoke;
+  position:absolute;
+  left: 157px;
+  top: 204px;
+  transform: rotate(-25deg);
+
+
+
+}
+
+
+
+.left_upper_arm{
+  width: 10px;
+  height:30px;
+  border-radius:10%;
+  background-color:whitesmoke;
+  position:relative;
+  left: 206px;
+  top: 183px;
+  transform: rotate(135deg);
+
+
+}
+.left_forearm{
+  width: 10px;
+  height:30px;
+  border-radius:30%;
+  background-color:whitesmoke;
+  position:relative;
+  left: 216px;
+  top: 174px;
+  transform: rotate(2deg);
+}
+
+
+
+
+.dance_1 {}
+
+.dance_2 {
+  animation: moveHands infinite alternate-reverse;
+
+}
+
+@keyframes moveHands {
+  50% {
+    transform-origin: -10px 10px;
+    transform: rotate(-9deg);
+
+
+  }
+  50% {
+    transform-origin: -10px 10px;
+    transform: skew(10deg 10deg);
+
+
+  }
+}
+
+.dancing_ground {
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.dancing_position{
+  height: 500px;
+  width: 400px;
+  position: absolute;
+
+
+
+
+
+}
+
+
+
