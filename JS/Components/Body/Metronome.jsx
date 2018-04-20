@@ -18,8 +18,6 @@ export class Metronome extends React.Component {
             bpm: 4,
             count: 0
         };
-        this.sound1 = <audio src="../../../assets/sounds/accent.wav"></audio>;
-        this.sound2 = <audio src="../../../assets/sounds/beat.wav"></audio>;
     }
 
 
@@ -96,18 +94,17 @@ export class Metronome extends React.Component {
 
 
             if (counter % accent === 0) {
-                this.playMusic1 = () => {
-                    this.audio.play();
+                    this.audio1.play();
 
-            } }else {
-                this.playMusic2 = () => {
-                    this.audio.play();
-            }}
+             }else {
 
-            this.setState(beat => ({
-                count: (beat.counter + 1) % beat.accent
-            }));
-        }
+                    this.audio2.play();
+            }
+
+            this.setState ({
+                count: (++counter ) % accent
+            });
+        };
 
         /*handleChange= (event) => {
             this.setState({
@@ -125,8 +122,8 @@ export class Metronome extends React.Component {
                             <div className={'tempo_meter'}>{this.state.tempo}</div>
                             <input className={'tempo_bar'} type="range" min='0' max="300" onChange= {this.SetTheTempo} />
                             <input className={'start_button'} type="button" onClick={this.ClickToChange} value={this.state.on===true ? 'Stop' : 'Start'}></input>
-                            <audio src="../../../assets/sounds/accent.wav" ref={el => this.audio = el} onLoad={this.playMusic1} />
-                            <audio src="../../../assets/sounds/beat.wav" ref={el => this.audio = el} onPlay={this.playMusic2} />
+                            <audio src="./../../../assets/sounds/accent.wav" ref={el => this.audio1 = el}/>
+                            <audio src="./../../../assets/sounds/beat.wav" ref={el => this.audio2 = el}/>
                         </div>
                 </section>
 
