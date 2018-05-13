@@ -8,7 +8,7 @@ export class Metronome extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            tempo: 100,
+            tempo: 60,
             on: false,
             class: 'dance_1',
             active: false,
@@ -102,7 +102,7 @@ export class Metronome extends React.Component {
             }
 
             this.setState ({
-                count: (++counter ) % accent
+                count: (counter + 1 )
             });
         };
 
@@ -120,10 +120,10 @@ export class Metronome extends React.Component {
                         <div className={'dancing_position'}>
                             <DancingMan class={this.state.class} style={this.state.animation}/>
                             <div className={'tempo_meter'}>{this.state.tempo}</div>
-                            <input className={'tempo_bar'} type="range" min='0' max="300" onChange= {this.SetTheTempo} />
+                            <input className={'tempo_bar'} type="range" min='60' max="120" onChange= {this.SetTheTempo} />
                             <input className={'start_button'} type="button" onClick={this.ClickToChange} value={this.state.on===true ? 'Stop' : 'Start'}></input>
                             <span className={'set_the_beat'}>Set the Beat</span>
-                            <input className={'set_bpm'} type="number" min='1' max='16' onChange={this.handleChange} value={this.state.bpm} />
+                            <input className={'set_bpm'} type="number" min='1' max='8' onChange={this.handleChange} value={this.state.bpm} />
                             <audio src="./../../../assets/sounds/accent.wav" ref={el => this.audio1 = el}/>
                             <audio src="./../../../assets/sounds/beat.wav" ref={el => this.audio2 = el}/>
                         </div>
