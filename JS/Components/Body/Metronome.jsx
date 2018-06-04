@@ -124,8 +124,8 @@ export class Metronome extends React.Component {
                             <input className={'start_button'} type="button" onClick={this.ClickToChange} value={this.state.on===true ? 'Stop' : 'Start'}></input>
                             <span className={'set_the_beat'}>Set the Beat</span>
                             <input className={'set_bpm'} type="number" min='1' max='8' onChange={this.handleChange} value={this.state.bpm} />
-                            <audio src="./../../../assets/sounds/accent.wav" ref={el => this.audio1 = el}/>
-                            <audio src="./../../../assets/sounds/beat.wav" ref={el => this.audio2 = el}/>
+                            <audio src="https://raw.githubusercontent.com/harrydeanstanton/metronome/master/assets/sounds/accent.wav" ref={el => this.audio1 = el}/>
+                            <audio src="https://raw.githubusercontent.com/harrydeanstanton/metronome/master/assets/sounds/beat.wav" ref={el => this.audio2 = el}/>
                         </div>
                 </section>
 
